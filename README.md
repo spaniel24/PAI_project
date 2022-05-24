@@ -46,3 +46,16 @@ Endpointy do RESTowej komunikacji frontend - backend:
   - PATCH /movies/return/:id do ustawienia tytułu o podanym id na dostępny (ustawienia daty zwrotu i rentedTo na NULL) (bez widoku, używany jedynie ręcznie)!
 
 ![PATCH_return_one](https://user-images.githubusercontent.com/48535738/170120549-49615abf-81ca-4130-9957-99919f68720e.png)
+  
+  - POST /login, data: {username, password} do zalogowania się podając username i password
+
+![Login](https://user-images.githubusercontent.com/48535738/170123730-36169fa5-1391-4f99-a742-7019f8923d01.png)
+
+  - POST /register, data: {username, password} do rejestracji podając username i password
+
+![GET_myMovies](https://user-images.githubusercontent.com/48535738/170123749-a2df333a-75fa-4429-9b08-9c970c2e2cdd.png)
+
+  - GET /myMovies do pobrania listy filmów dla zalogowanego użytkownika
+ 
+![GET_my_movies_proper](https://user-images.githubusercontent.com/48535738/170124227-f518099a-01df-45d3-ab4e-7f3cf013210b.png)
+
