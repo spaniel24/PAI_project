@@ -32,7 +32,17 @@ Modele danych:
 
 Endpointy do RESTowej komunikacji frontend - backend:
   - GET /movies do pobrania wszystkich filmów, które nie są przez nikogo wypożyczone z bazy danych  
-  - PATCH /movies, data: {id} do zarezerwowania jednego z dostępnych filmów o id przekazywanym w requeście 
-  - PATCH /movies/returnAll do ustawienia wszystkich tytułów na dostępne (ustawienia daty zwrotu i rentedTo na NULL)
-  - PATCH /movies/return/:id do ustawienia tytułu o podanym id na dostępny (ustawienia daty zwrotu i rentedTo na NULL)
+  
+![GET_movies_bitmap](https://user-images.githubusercontent.com/48535738/170116984-91151592-ed7a-4209-a1ea-508fd48c1cd7.png)
 
+  - PATCH /movies, data: {id} do zarezerwowania jednego z dostępnych filmów o id przekazywanym w requeście 
+
+![PATCH_movies](https://user-images.githubusercontent.com/48535738/170118784-85ad3150-84bb-4e86-86a4-f765f4142533.png)
+
+  - PATCH /movies/returnAll do ustawienia wszystkich tytułów na dostępne (ustawienia daty zwrotu i rentedTo na NULL) (bez widoku, używany jedynie ręcznie)
+
+![PATCH_returnAll](https://user-images.githubusercontent.com/48535738/170120451-8fcd9738-5a3b-41a6-95ee-df95f86d1d15.png)
+
+  - PATCH /movies/return/:id do ustawienia tytułu o podanym id na dostępny (ustawienia daty zwrotu i rentedTo na NULL) (bez widoku, używany jedynie ręcznie)!
+
+![PATCH_return_one](https://user-images.githubusercontent.com/48535738/170120549-49615abf-81ca-4130-9957-99919f68720e.png)
