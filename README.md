@@ -26,6 +26,13 @@ Modele danych:
     - rentedTo (INTEGER)
     - returnDate (TEXT)
   
-  -users
+  - users
     - username
     - password
+
+Endpointy do RESTowej komunikacji frontend - backend:
+  - GET /movies do pobrania wszystkich filmów, które nie są przez nikogo wypożyczone z bazy danych  
+  - PATCH /movies, data: {id} do zarezerwowania jednego z dostępnych filmów o id przekazywanym w requeście 
+  - PATCH /movies/returnAll do ustawienia wszystkich tytułów na dostępne (ustawienia daty zwrotu i rentedTo na NULL)
+  - PATCH /movies/return/:id do ustawienia tytułu o podanym id na dostępny (ustawienia daty zwrotu i rentedTo na NULL)
+
