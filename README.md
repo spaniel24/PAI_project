@@ -63,3 +63,4 @@ Endpointy do RESTowej komunikacji frontend - backend:
 Frontend został zaimplementowany za pomocą Reacta w języku JavaScript. Style zostały dodane przez pliki .css.
 Backend został zaimplementowany za pomocą node.js i express. Autoryzacja użytkowników i ich requestów jest możliwa dzięki bibliotekom express-session, cookie-parser i passport. Automatyczny zapis daty o tydzień późniejszej niż obecna i jej wyświetlenie w lokalnej strefie czasowej możliwy jest dzięki bibliotece luxon.
 Strategia, z której korzysta serwer przy odpytaniu endpointa "/login", dostępna jest w backend/strategies/local.js. To tam zawarte jest wyszukiwanie usera w bazie danych i określanie, czy username i password do siebie pasują.
+Baza danych to lokalny plik backend/database/VHS.db utworzony za pomocą SQLite.
